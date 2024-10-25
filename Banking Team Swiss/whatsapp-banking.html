@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Banking - Swiss Bank of India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #8ff08f;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Button Styles */
+        .service-btn {
+            display: inline-block;
+            width: 220px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            background-color: #25D366; /* WhatsApp Green */
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Hover Effect */
+        .service-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* WhatsApp Bar */
+        .whatsapp-bar {
+            background-color: #25D366;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .whatsapp-logo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .whatsapp-bar a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .whatsapp-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply Animation to Buttons */
+        .service-btn {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>WhatsApp Banking Services</h2>
+
+    <!-- WhatsApp Bar -->
+    <div class="whatsapp-bar">
+        <img src="WhatsApp.png" alt="WhatsApp Logo" class="whatsapp-logo">
+        <a href="https://wa.me/your-number" target="_blank">Connect with Us on WhatsApp</a>
+    </div>
+
+    <div class="container">
+        <a href="manage-whatsapp-account.html" class="service-btn">Manage WhatsApp Bank Account</a>
+       
+        <a href="scan-qr-code.html" class="service-btn">Scan QR Code</a>
+        
+    </div>
+
+</body>
+
+</html>

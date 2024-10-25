@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOB World - Swiss Bank of India</title>
+    <style>
+      
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ccb845;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+   
+        .service-btn {
+            display: inline-block;
+            width: 220px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            background-color: #f39c12; 
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .service-btn:hover {
+            background-color: #e67e22;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+   
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        .service-btn {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>BOB World Services</h2>
+
+    <div class="container">
+        <a href="pay-bills.html" class="service-btn">Pay Bills</a>
+        <a href="pay-home-rent.html" class="service-btn">Pay Home Rent</a>
+       
+        <a href="pay-insurance.html" class="service-btn">Pay Insurance</a>
+        
+    </div>
+
+</body>
+
+</html>

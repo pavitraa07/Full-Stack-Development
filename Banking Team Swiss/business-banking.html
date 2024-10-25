@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Banking - Swiss Bank of India</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b0b1df;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00509d;
+        }
+
+        .service-button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .service-button:hover {
+            background-color: #ff4757;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Business Banking Services</h1>
+    </header>
+
+    <div class="container">
+        <h2>Select a Service</h2>
+        <button class="service-button" onclick="window.location.href='business-loans.html'">Business Loans</button>
+        <button class="service-button" onclick="window.location.href='merchant-services.html'">Merchant Services</button>
+       
+      <button class="service-button" onclick="window.location.href='commercial-banking.html'">Commercial Banking</button>
+        <button class="service-button" onclick="window.location.href='commercial-loans.html'">Commercial Loans</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Swiss Bank of India. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

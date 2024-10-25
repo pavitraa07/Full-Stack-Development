@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Banking - Swiss Bank of India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #7aaee9;
+            color: #333;
+            
+            
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Button Styles */
+        .service-btn {
+            display: inline-block;
+            width: 220px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            background-color: #007bff; /* Blue color */
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Hover Effect */
+        .service-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply Animation to Buttons */
+        .service-btn {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Internet Banking Services</h2>
+
+    <div class="container">
+        
+        
+        <a href="deposit-money.html" class="service-btn">Deposit Money</a>
+        <a href="download-account-statement.html" class="service-btn">Download Account Statement</a>
+        <a href="update-address.html" class="service-btn">Update Address</a>
+    </div>
+
+</body>
+
+</html>

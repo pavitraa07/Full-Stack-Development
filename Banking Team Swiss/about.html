@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Bank of India - About Us</title>
+    <style>
+     
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+ 
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: slideInLeft 1s ease;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00509d;
+        }
+
+   
+        .hero {
+            background-color: #00509d;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: slideInUp 1.2s ease;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .about-content div {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.2s ease forwards;
+        }
+
+        .about-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.1em;
+        }
+
+       
+        .insights {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .insight-box {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeInUp 2s ease;
+        }
+
+        .insight {
+            text-align: center;
+            padding: 20px;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: bounceIn 1.5s forwards;
+        }
+
+        .insight h3 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff6b6b;
+        }
+
+        .insight p {
+            font-size: 1.2em;
+        }
+
+        .insight:hover h3 {
+            animation: bounce 0.5s ease;
+        }
+
+      
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+  
+    <header>
+        <h1>Swiss Bank of India</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>About Swiss Bank of India</h2>
+        <p>Delivering trust and innovation since 1964</p>
+    </section>
+
+    <div class="container">
+        <h2>Who We Are</h2>
+        <div class="about-content">
+        
+            <div>
+                <h3>Our History</h3>
+                <p>Swiss Bank of India was founded in 1964 with a vision to provide world-class banking services to Indian citizens and businesses. With over 60 years of innovation and trust, we have grown into one of India's leading financial institutions.</p>
+            </div>
+     
+            <div>
+                <h3>Our Mission & Values</h3>
+                <p>Our mission is to empower individuals and businesses through financial solutions that foster growth, security, and innovation. Our core values include transparency, trust, customer satisfaction, and corporate responsibility.</p>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div>
+                <h3>Leadership</h3>
+                <p>Swiss Bank of India is led by an experienced team of professionals who are committed to driving the bank's success and ensuring we remain at the forefront of the financial industry. Our leadership team brings a wealth of experience from various sectors.</p>
+            </div>
+            <div>
+                <h3>Corporate Responsibility</h3>
+                <p>We believe in giving back to the community through initiatives that focus on sustainability, education, and financial literacy. Swiss Bank of India takes pride in being a socially responsible corporate entity.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="insights">
+        <h2>Our Impact</h2>
+        <div class="insight-box">
+          
+            <div class="insight">
+                <h3>500+</h3>
+                <p>Branches Nationwide</p>
+            </div>
+        
+            <div class="insight">
+                <h3>10M+</h3>
+                <p>Happy Customers</p>
+            </div>
+      
+            <div class="insight">
+                <h3>50+</h3>
+                <p>Banking Services</p>
+            </div>
+           
+            <div class="insight">
+                <h3>25+</h3>
+                <p>Industry Awards</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Swiss Bank

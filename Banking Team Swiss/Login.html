@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("Swiss.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Swiss Bank of India</title>
+    <script>
+        function showPopup(success) {
+            const message = success ? "Login successful!" : "Login failed. Please check your credentials.";
+            alert(message);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simulate success or failure (replace this with actual login logic)
+            const isSuccess = true; // Change to false to simulate failed login
+
+            showPopup(isSuccess);
+            // Optionally redirect to the home page after a successful login
+            if (isSuccess) {
+                window.location.href = "Home.html"; // Uncomment this line if you want to redirect
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <center><h2>Login to Your Account</h2></center>
+        <form onsubmit="handleSubmit(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="Regstration.html" style="color: #a8d5ba;">Register here</a></p>
+    </div>
+</body>
+</html>

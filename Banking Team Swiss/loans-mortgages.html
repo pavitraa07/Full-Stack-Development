@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans & Mortgages - Swiss Bank of India</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d37a7a;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00509d;
+        }
+
+        .service-button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .service-button:hover {
+            background-color: #ff4757;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Change to relative for animation */
+            opacity: 0; /* Start invisible */
+            transition: opacity 0.5s ease; /* Transition for fading */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Loans & Mortgages Services</h1>
+    </header>
+
+    <div class="container">
+        <h2>Select a Service</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Home Loans</h3>
+                <p>Get the best rates on home financing.</p>
+                <button class="service-button" onclick="window.location.href='home-loan-details.html'">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Personal Loans</h3>
+                <p>Flexible loans for personal expenses.</p>
+                <button class="service-button" onclick="window.location.href='personal-loan-details.html'">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Car Loans</h3>
+                <p>Finance your dream car with ease.</p>
+                <button class="service-button" onclick="window.location.href='car-loan-details.html'">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Education Loans</h3>
+                <p>Invest in your future with educational financing.</p>
+                <button class="service-button" onclick="window.location.href='education-loan-details.html'">Learn More</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; 2024 Swiss Bank of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to animate the footer
+        function animateFooter() {
+            const footer = document.getElementById('footer');
+            setTimeout(() => {
+                footer.style.opacity = 1; // Make footer visible
+            }, 1000); // Delay for 1 second before showing the footer
+        }
+
+        // Call the function to start the animation
+        animateFooter();
+    </script>
+</body>
+
+</html>

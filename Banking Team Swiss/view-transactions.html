@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Transactions - Swiss Bank of India</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #dc3545;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .service-details {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #dc3545;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .credit {
+            color: green;
+        }
+
+        .debit {
+            color: red;
+        }
+
+        footer {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .back-button {
+            background-color: #c82333;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a71d2a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>View Transactions</h1>
+    </header>
+
+    <div class="container">
+        <div class="service-details">
+            <h2>Transaction History</h2>
+            <p>View your recent transactions securely.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-10-23 14:05:12</td>
+                        <td>NEFT Transfer</td>
+                        <td class="debit">₹5,000.00</td>
+                        <td class="debit">Debited</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-22 09:23:43</td>
+                        <td>ATM Withdrawal</td>
+                        <td class="debit">₹2,000.00</td>
+                        <td class="debit">Debited</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-21 16:45:10</td>
+                        <td>Salary Credit</td>
+                        <td class="credit">₹50,000.00</td>
+                        <td class="credit">Credited</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-19 18:30:02</td>
+                        <td>UPI Payment</td>
+                        <td class="debit">₹1,200.00</td>
+                        <td class="debit">Debited</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-18 12:55:45</td>
+                        <td>Bank Transfer</td>
+                        <td class="credit">₹10,000.00</td>
+                        <td class="credit">Credited</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="back-button" onclick="window.history.back()">Back to Services</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Swiss Bank of India. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

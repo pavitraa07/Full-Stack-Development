@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Address - Swiss Bank of India</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .service-details {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .update-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .update-btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .back-button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Update Address</h1>
+    </header>
+
+    <div class="container">
+        <div class="service-details">
+            <h2>Update Your Address</h2>
+            <p>Change or update your address securely.</p>
+            
+            <form>
+                <input type="text" placeholder="Account Number" required><br>
+                <input type="text" placeholder="New Address" required><br>
+                <input type="tel" placeholder="Phone Number" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <button type="submit" class="update-btn">Update Address</button>
+            </form>
+
+            <button class="back-button" onclick="window.history.back()">Back to Services</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Swiss Bank of India. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

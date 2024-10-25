@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Locker Bill - Swiss Bank of India</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function showPopup(success) {
+            const message = success ? "Payment submitted successfully!" : "Payment failed. Please try again.";
+            alert(message);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Simulate success or failure (replace this with actual payment logic)
+            const isSuccess = true; // Change to false to simulate failure
+
+            showPopup(isSuccess);
+            // Optionally reset the form after a successful submission
+            // if (isSuccess) document.querySelector('form').reset();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Pay Your Locker Bill</h2>
+
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="account">Account Number</label>
+        <input type="number" id="account" name="account" required>
+
+        <label for="locker-id">Locker ID</label>
+        <input type="text" id="locker-id" name="locker-id" required>
+
+        <label for="amount">Amount (INR)</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <button type="submit">Pay Bill</button>
+    </form>
+
+</body>
+
+</html>

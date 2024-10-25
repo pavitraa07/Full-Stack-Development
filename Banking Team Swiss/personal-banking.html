@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Banking - Swiss Bank of India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lightblue;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00509d;
+            transform: scale(1.1);
+        }
+
+        /* Main Section */
+        .main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .main h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .service-button {
+            background: linear-gradient(135deg, #ff6b6b, #ff4757);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-button:hover {
+            transform: scale(1.05);
+            background-color: #e63946;
+            color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-button:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 0;
+        }
+
+        .service-button:hover:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .service-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Swiss Bank of India</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <div class="main">
+        <h2>Select a Service</h2>
+        <a href="createaccount.html" class="service-button"><span>Current Account</span></a>
+        <a href="createcredit.html" class="service-button"><span>Credit Card</span></a>
+        <a href="debit.html" class="service-button"><span>Debit Card</span></a>
+        <a href="applyforatm.html" class="service-button"><span>Apply for ATM Card</span></a>
+        <a href="pan.html" class="service-button"><span>Link PANCARD</span></a>
+       
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Swiss Bank of India. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
