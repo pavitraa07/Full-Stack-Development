@@ -55,7 +55,7 @@ cd swiss-bank-of-india
 Developers
 
 This project was developed by:
-•	Vikas Gajanan Mule - viksmule356@gmail.com
+•	Vikas Gajanan Mule - vikasmule356@gmail.com
 
 •	Pavitra B. Salagatii - pavitrabs68@gmail.com
 
